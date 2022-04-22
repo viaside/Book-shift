@@ -1,0 +1,364 @@
+/* тесты*/
+
+/*адаптация разрешения*/
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+   }
+
+/* значения для всего */
+body{ 
+	background: url(resources/head.jpg);
+	background-size: 10px: 
+	background-color: #E8E7DA;
+	/*#E8E7DA, #DCDBD1*/
+	/*background: linear-gradient(to right, #AFAEA3, #F8F7EC);*/
+	margin: 0px;
+	display: flex;
+    flex-direction: column;
+	/*filter: invert(100%);*/
+	/*filter: blur(1px);*/
+}
+
+/*поиск*/
+form {
+	text-align: center;
+}
+legend {
+	color: #2A2A27;
+	font-size: 30px;
+}
+button {
+	color: #666560;
+	border-style: solid;
+	border-color: #666560;
+	height: 31px;
+	width: 90px;
+	font-size: 23px;
+	background: linear-gradient(90deg,
+	  rgba(255, 255, 255, 0) 0%,
+	  rgba(255, 255, 255, 0.3) 25%,
+	  rgba(255, 255, 255, 0.5) 75%,
+	  rgba(255, 255, 255, 0) 100%); 
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+	  inset 0 0 1px rgba(255,255,255,0.6);
+}
+input {
+  color: #666560; 
+  font-style: italic;
+  font-size: 25px; 
+  width: 370px;
+  height: 25px;
+}
+table {
+	color: #666560;	
+	font-size: 25px;
+
+}
+select {
+	color: #666560;
+	background: linear-gradient(90deg,
+	  rgba(255, 255, 255, 0) 0%,
+	  rgba(255, 255, 255, 0.3) 25%,
+	  rgba(255, 255, 255, 0.5) 75%,
+	  rgba(255, 255, 255, 0) 100%); 
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+	  inset 0 0 1px rgba(255,255,255,0.6);
+	font-style: italic; 
+	font-size: 20px;
+	text-align: center;		
+}
+
+/*создание прозрачного списка */
+nav {
+	/*создается тень и градиент*/
+	/*градиент*/
+	background: linear-gradient(90deg,
+	  rgba(255, 255, 255, 0) 0%,
+	  rgba(255, 255, 255, 0.3) 25%,
+	  rgba(255, 255, 255, 0.5) 75%,
+	  rgba(255, 255, 255, 0) 100%); 
+	/*тень*/
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+	  inset 0 0 1px rgba(255,255,255,0.6);
+	  text-align: center;
+}
+/*делает что весь список был в одну строку*/
+nav ul li {
+	display: inline-block;
+}
+/*создается дизнайн текста*/
+nav ul li a {
+	margin: 0px; 
+	padding: 15px;
+	color: #666560;
+	font-size: 30px;
+	text-decoration: none;
+	display: block;
+}
+
+/*Оглавление*/
+h1{
+	text-align: center;
+	background-image: url();
+    color: #666560;
+    margin: 0px;
+    font-size: 40px;
+    padding: 30px;
+}
+
+/*заголовки*/
+h2 {
+	margin: 0px;
+	color: #666560;
+	background-color: #EEEDE7;
+	border-style:groove;
+	border-color: #E0DFD3;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 35px;
+}
+/*Текст*/
+h3 {
+	margin: 0px;
+	color: #666560;
+	text-align: center;
+	font-size: 25px; 
+
+}
+
+h4 {
+	color: #666560;
+	margin: 0px;
+}
+
+/*ээ... Заголовки абзацев*/
+dl {
+	margin: 0px;
+}
+dt {
+	color: #2A2A27;
+	padding-left: 25px;
+	margin: 0;
+	font-size: 30px;
+}
+
+/*абзацы*/
+dd {
+	color: #666560;
+	font-size: 25px; 
+}
+
+/*ссылки*/
+a {
+	color:#666560;
+	font-size: 20px;
+}
+
+/*функция при наведение на ссылку*/
+a:hover { 
+	color: #908F87;
+	transform:scale(1.2);
+}
+
+
+/*дизнайн списков*/
+ul {
+	color: #666560;
+	margin: 0px;
+	font-size: 25px; 
+}
+
+/*отдельные текста*/
+em { 
+	margin: 0;
+	text-align: center;
+	color:#2A2A27;
+	font-style: normal;
+}
+
+/*изображения с подписью*/
+figure figcaption {
+	font-size: 25px;
+	color: #666560;
+}
+
+figure {
+	color: #908F87; 
+	display: inline-block;
+	margin: 15px;
+
+} 	
+/*классы*/
+.wrapper {
+    flex: 1 0 auto;
+}
+#header {
+	margin-bottom: 20px;
+	padding: 0;
+}
+#logo_head {
+	position: absolute;
+}
+#footer {
+	height: 150px;
+	padding: 20px 40px 20px 40px;
+}
+.footer {
+    flex-shrink: 0;
+    font-size: 25px;
+    background: linear-gradient(90deg,
+	  rgba(255, 255, 255, 0) 0%,
+	  rgba(255, 255, 255, 0.3) 25%,
+	  rgba(255, 255, 255, 0.5) 75%,
+	  rgba(255, 255, 255, 0) 100%); 
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+	  inset 0 0 1px rgba(255,255,255,0.6);
+}
+#info {
+	float: left;
+	padding: 20px;
+}
+
+#social {
+	float: left;
+	padding: 20px;
+}
+
+#site_map {
+	float: left;
+	padding: 20px;
+}
+#site_map a {
+	display: block;
+}
+#logo_footer {
+	float: right;
+	padding: 20px;
+}
+
+.book {
+	font-size: 16px;
+	font-weight: 300px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+.magazine {
+	width: 950px;
+	height: 600px;
+	padding: 20px;
+}
+
+
+.text {
+	font-size: 25px;
+	padding-left: 30px;
+}
+
+.shadow_book {
+	background: linear-gradient(90deg,
+	  rgba(255, 255, 255, 0) 0%,
+	  rgba(255, 255, 255, 0.3) 25%,
+	  rgba(255, 255, 255, 0.5) 75%,
+	  rgba(255, 255, 255, 0) 100%); 
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+	  inset 0 0 1px rgba(255,255,255,0.6);
+	  text-align: center;
+	  padding: 5px;
+	  margin: 5px;
+}
+
+.shadow_text {
+	background: linear-gradient(90deg,
+	  rgba(255, 255, 255, 0) 0%,
+	  rgba(255, 255, 255, 0.3) 25%,
+	  rgba(255, 255, 255, 0.5) 75%,
+	  rgba(255, 255, 255, 0) 100%); 
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+	  inset 0 0 1px rgba(255,255,255,0.6);
+	width: 80%;
+	padding: 10px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px; 
+}
+
+/*галерея*/
+.cssSlider {
+	margin: 10px;
+	display: block;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin: auto;
+}
+.cssSlider .slides {
+	overflow: hidden;
+	overflow: hidden;
+	width: 100%;
+	height: 51vmin;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.cssSlider .slides > li {
+	width: 100%;
+	height: 50vmin;
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+}
+.cssSlider .slides > li > img {
+	width: 100%;
+	height: auto;
+}
+.cssSlider .thumbnails {
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.cssSlider .thumbnails > li {
+	float: left;
+	width: 18%;
+	padding: 10px;
+}
+.cssSlider .thumbnails > li > a {
+	display: block;
+}
+.cssSlider .thumbnails > li > a > img {
+	width: 100%;
+	height: auto;
+}
+
+.cssSlider .slides li:target {
+	z-index: 3;
+	-webkit-animation: slide 1s 1;
+}
+.cssSlider .slides li:not(:target) {
+	-webkit-animation: hidden 1s 1;
+}
+
+.roof{
+	width: 80%;
+	margin: auto;
+}
+
+.reviews {
+	text-align: center;
+}
+
+#username {
+	width: 250px;
+}
+
+#reviews {
+	width: 500px;
+}
+
+.cscs{
+	display: inline-block;
+}
